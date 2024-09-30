@@ -1,0 +1,12 @@
+Ci siamo organizzati dividendo il lavoro giorno per giorno, passaggio per passaggio.
+Siamo partiti dalla progettazione del database, poi abbiamo creato il server e infine la parte di client.
+Abbiamo usato un approccio design pattern builder, cosi' da tenere sotto controllo il lavoro dalle fondamenta fino alla UI
+In particolare Pichierri e Scolaro si sono concentrati sulla parte della progettazione del design e parte di scrittura del codice, di rendere tutto congruo alle richieste e mantenere un'alta funzionalita' del programma.
+Tagliabue hanno avuto il compito di sistemare le documentazioni dei progetti e hanno aiutato con il debug del codice.
+
+Pichierri (Management e scrittura codice)
+Scolaro (Design e scrittura codice)
+Tagliabue (Debug e Documentazione)
+Elezi (Documentazione)
+
+ 

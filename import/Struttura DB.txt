@@ -1,0 +1,37 @@
+CREATE TABLE geonamesandcoordinates (
+geoname VARCAHR(255),
+name VARCHAR(255),
+ascii VARCHAR(255),
+country_code VARCHAR(255),
+country_name VARCHAR(255),
+coordinates varchar(255)
+);
+
+CREATE TABLE operatoriregistrati (
+nome_cognome VARCHAR(255),
+codice_fiscale VARCHAR(255),
+mail VARCHAR(255),
+operator_id VARCHAR(255) PRIMARY KEY,
+password VARCHAR(255)
+);
+
+CREATE TABLE parametriclimatici (
+nomecentro varchar(255),
+geoname varchar(255),
+vento varchar(255),
+umidita varchar(255),
+pressione varchar(255),
+temperatura varchar(255),
+precipitazioni varchar(255),
+altitudinegiacciai varchar(255),
+massaghiacciai varchar(255),
+PRIMARY KEY (nomecentro, geoname),
+FOREIGN KEY (nomecentro) references centrimonitoraggio(nomecentro),
+FOREIGN KEY (geoname) references geonamesandcoordinates(geoname)
+);
+
+CREATE TABLE centrimonitoraggio (
+nomecentro varchar(255),
+indirizzo varchar(255),
+operator_id varchar(255)
+);
